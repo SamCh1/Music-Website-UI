@@ -47,3 +47,158 @@
 
 
 /*End input type:range*/
+
+/* section 1*/
+
+.player{
+    box-shadow: 10px 20px 8px #888888;
+}
+
+/* h-[305px] w-[305px] rounded-full absolute flex items-center justify-center border-none bg-[url(https://img.freepik.com/free-vector/colorful-ring-gradient-element_53876-118490.jpg?t=st=1725709104~exp=1725712704~hmac=defccdf04cd3185440380aac3b6984862f43a5246bd87afec9b723a7e2f7a163&w=1060)] bg-center bg-cover top-[10px] left-[20px]*/
+.record{
+    height: 305px;
+    width: 305px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-size:cover;
+    background-position:center;
+    top:15px;
+    left:40px;
+}
+
+/* h-[100px] w-[100px] rounded-full bg-[url(/demo/images.jpeg)] bg-center bg-cover*/
+.label{
+    height:120px;
+    width:120px;
+    border-radius:50%;
+    background-position:center;
+    background-size: cover;
+}
+
+.label:before{
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    background-color:#f5f5f5;
+    position:absolute;
+    content:"";
+    top:138px;
+    left:138px;
+    box-shadow: 5px 5px 8px #888888;
+}
+/*  h-[190px] w-[20px]  absolute border border-[#cccccc] top-[25px] right-[90px] rounded-t-[18px] rounded-b-[18px]*/
+.tone-arm{
+    height:190px;
+    width:20px;
+    position:absolute;
+    border: 2px solid #cccccc;
+    top:25px;
+    right:90px;
+    background:#949494;
+    order:1;
+    z-index:999;
+    box-shadow: 5px 10px 14px #888888;
+}
+
+
+.tone-arm:before{
+    content:"";
+    height:80px;
+    width:20px;
+    position:absolute;
+    transform: rotate(30deg);
+    bottom:-68px;
+    right:13px;
+    background:#949494;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+    box-shadow: 5px 10px 14px #888888;
+    border-right:2px solid #cccccc;
+
+}
+
+.tone-arm:after{
+    content:"";
+    position:absolute;
+    height:50px;
+    width:30px;
+    border-top-left-radius: 50px;
+    border-top-right-radius:50px;
+    background:#545357;
+    transform: rotate(30deg);
+    top:210px;
+    right:22px;
+    box-shadow: 5px 10px 14px #888888;
+
+}
+
+
+.control{
+    background-color:#c4c4c4;
+    height:50px;
+    width:50px;
+    border:10px solid #2c2c2e;
+    border-radius:50%;
+    position: absolute;
+    top:10px;
+    left:-16px;
+    box-shadow: 5px 10px 8px #888888;
+
+}
+
+.control:after{
+    content:"";
+    width:10px;
+    height:25px;
+    background:#f5f5f5;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transform:rotate(-45deg);
+    position:absolute;
+    top:-2px;
+    left:4px;
+    box-shadow: -2px 1px 1px #888888;
+}
+
+.control:before{
+    content:"";
+    width:7px;
+    height:7px;
+    border-radius: 50%;
+    background:#c4c4c4;
+    position:absolute;
+    left:25px;
+    top:25px;
+}
+
+
+.btn{
+    height: 38px;
+    width: 38px;
+    background-color:#cccccc;
+    position:absolute;
+    bottom:20px;
+    right:30px;
+    border-radius:50%;
+    border:5px solid #545357;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.playing {
+    transform: rotate(30deg);
+    transform-origin: top;
+    transition: 1s;
+}
+
+.on{
+    animation: spin 3s 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
