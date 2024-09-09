@@ -37,8 +37,10 @@ const data = [
 export default function Section3(){
     return(
         <>
-            <Title text="Ca sĩ nổi bật"/>
-            <CardList data={data}/>
+            <div className="mt-[30px]">
+                <Title text="Ca sĩ nổi bật"/>
+                <CardList data={data}/>
+            </div>
         </>
     )
 }

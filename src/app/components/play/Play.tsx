@@ -6,7 +6,7 @@ import { FaVolumeHigh } from "react-icons/fa6";
 export default function PlaySong() {
     return (
         <>
-            <div className="bg-[#dbdbdb] w-full bottom-0 left-0 py-[20px] px-[20px] fixed z-[999] border-t">
+            <div className="backdrop-blur-[20px] w-full bottom-0 left-0 py-[20px] px-[20px] fixed z-[999] border-t">
                 <div className="container mx-auto flex items-center justify-between">
                     {/* info */}
                     <div className="flex items-center w-[218px]">

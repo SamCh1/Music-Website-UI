@@ -8,7 +8,7 @@ export default function Section2(props: {lyric : string}){
                 <Title
                     text="Lời bài hát"
                 /> 
-                <div className="bg-[white] text-secondary rounded-[12px] p-[20px]">{lyric}</div>
+                <div className="bg-[white] text-third rounded-[12px] p-[20px] whitespace-pre-line">{lyric}</div>
             </div>
         </>
     )
