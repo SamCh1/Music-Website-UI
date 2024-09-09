@@ -91,31 +91,32 @@
 }
 /*  h-[190px] w-[20px]  absolute border border-[#cccccc] top-[25px] right-[90px] rounded-t-[18px] rounded-b-[18px]*/
 .tone-arm{
-    height:190px;
-    width:20px;
+    height:150px;
+    width:15px;
     position:absolute;
-    border: 2px solid #cccccc;
-    top:25px;
-    right:90px;
+    border-right: 2px solid #cccccc;
+    top:55px;
+    right:100px;
     background:#949494;
     order:1;
     z-index:999;
-    box-shadow: 5px 10px 14px #888888;
+    box-shadow: 5px 10px 14px #6f6e6e;
+    transform-origin: top;
 }
 
 
 .tone-arm:before{
     content:"";
     height:80px;
-    width:20px;
+    width:15px;
     position:absolute;
     transform: rotate(30deg);
     bottom:-68px;
-    right:13px;
+    right:15px;
     background:#949494;
     border-top-right-radius: 18px;
     border-top-left-radius: 18px;
-    box-shadow: 5px 10px 14px #888888;
+    box-shadow: 5px 10px 14px #6f6e6e;
     border-right:2px solid #cccccc;
 
 }
@@ -124,15 +125,15 @@
     content:"";
     position:absolute;
     height:50px;
-    width:30px;
+    width:25px;
     border-top-left-radius: 50px;
     border-top-right-radius:50px;
-    background:#545357;
+    background:#444444;
     transform: rotate(30deg);
-    top:210px;
-    right:22px;
-    box-shadow: 5px 10px 14px #888888;
-
+    top:190px;
+    right:35px;
+    box-shadow: 5px 10px 14px #6f6e6e;
+    border-bottom: 2px solid #cccccc;
 }
 
 
@@ -143,9 +144,9 @@
     border:10px solid #2c2c2e;
     border-radius:50%;
     position: absolute;
-    top:10px;
+    top:-30px;
     left:-16px;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px #6f6e6e;
 
 }
 
@@ -160,7 +161,7 @@
     position:absolute;
     top:-2px;
     left:4px;
-    box-shadow: -2px 1px 1px #888888;
+    box-shadow: -2px 1px 1px #6f6e6e;
 }
 
 .control:before{
@@ -184,13 +185,14 @@
     right:30px;
     border-radius:50%;
     border:5px solid #545357;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px #6f6e6e;
 }
 
 .playing {
     transform: rotate(30deg);
-    transform-origin: top;
+    transform-origin:top;
     transition: 1s;
+    animation: armTwitch 1s 3s infinite;
 }
 
 .on{
@@ -200,5 +202,11 @@
 @keyframes spin{
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@keyframes armTwitch{
+    100%{
+        transform: rotate(31deg);
     }
 }

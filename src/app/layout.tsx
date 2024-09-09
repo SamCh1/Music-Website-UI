@@ -36,7 +36,7 @@ export default function RootLayout({
       <body
         //className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className={`${BeVietnamPro.className}  bg-[url("https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] bg-cover bg-center bg-no-repeat `}>
-        <div className="bg-[#dbdbdb] mx-[40px] rounded-[18px] mt-[20px] min-h-screen">
+        <div className="bg-[#f5f5f5] mx-[40px] rounded-[18px] mt-[20px] min-h-screen">
           <div className="container mx-auto">
             <div className="flex items-start pt-[20px]">
               <div className="w-[280px]">
