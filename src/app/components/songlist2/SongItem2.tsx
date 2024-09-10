@@ -12,7 +12,7 @@ export default function SongItem2(props:any) {
                 </div>
                 <div className="mx-[10px] w-[265px]">
                     <div className="">
-                        <Link href="" className="text-primary font-[500] text-[24px]"> {title} </Link>
+                        <Link href="" className="text-primary font-[700] text-[16px]"> {title} </Link>
                     </div>
                     <div className="font-[400] text-[16px] mb-[5px] ">
                         {singer}

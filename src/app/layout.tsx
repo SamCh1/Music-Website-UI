@@ -22,7 +22,7 @@ const BeVietnamPro = Be_Vietnam_Pro({
 // });
 
 export const metadata: Metadata = {
-  title: "Project 4",
+  title: "Music",
   description: "Project 4: Website music",
 };
 
@@ -33,6 +33,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/demo/favicon.svg" />
+      </head>
       <body
         //className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className={`${BeVietnamPro.className}  bg-[url("https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] bg-cover bg-center bg-no-repeat `}>
