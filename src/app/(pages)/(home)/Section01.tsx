@@ -41,6 +41,7 @@ export default async function Section01(){
             title:value.title,
             audio: value.audio,
             listen: value.listen,
+            lyric: value.lyric,
             singer: " abc, efg "
           }
         )

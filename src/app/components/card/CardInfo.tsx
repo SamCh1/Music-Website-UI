@@ -3,7 +3,7 @@ export default function CardInfo(props: {
     title:string,
     description:string
 }) {
-    const { image, title, description} = props;
+    const { image =" ", title=" ", description=" "} = props;
     return (
         <>
             <div className="flex items-center">

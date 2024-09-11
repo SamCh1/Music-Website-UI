@@ -20,6 +20,7 @@ export default async function Section2(props: { singerId: string }){
                         title: value.title,
                         listen: value.listen,
                         singerId: value.singerID,
+                        audio:value.audio,
                         link: `/song/${key}`
                     });
                 }

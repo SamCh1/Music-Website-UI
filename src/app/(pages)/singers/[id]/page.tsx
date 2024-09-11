@@ -9,12 +9,12 @@ export default async function SingerDetailPage(props: {params: {id: string}}){
   const { params } = props;
   const result :any = await new Promise((resolve) => {
       const singersRef = ref(dbFirebase, `singers/${params.id}`);
-      onValue(singersRef, (snapshot)=>{
+      onValue(singersRef, async (snapshot)=>{
         const data: any = snapshot.val();
         resolve(data);
       });
   })
-
+  console.log("Fetched data:", result);
     return (
         <>
           {/* CardInfo */}

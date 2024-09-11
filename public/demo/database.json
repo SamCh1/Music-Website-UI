@@ -70,7 +70,7 @@
       "categoryId": "1",
       "singerId": ["1", "3"],
       "audio": "https://backend.daca.vn/assets/audios/cat-doi-noi-sau.mp3",
-      "lyric": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "lyric": "Cắt đôi nỗi sầu, anh buông tay cắt đôi nỗi sầu",
       "listen": 24500
     },
     "2": {
@@ -79,7 +79,7 @@
       "categoryId": "1",
       "singerId": ["2"],
       "audio": "https://backend.daca.vn/assets/audios/ngay-mai-nguoi-ta-lay-chong.mp3",
-      "lyric": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "lyric": "Ai tìm ai trên phố vắng ngược lối cơn mưa chiều giăng giăng",
       "listen": 20500
     },
     "3": {

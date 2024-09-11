@@ -6,9 +6,9 @@ import SongItem from "./SongItem";
 
 const data: any =
     {
-        image:"/demo/images.jpeg",
-        title:"Radio",
-        singer:"Lana Del rey",
+        image:"/demo/image2.jpg",
+        title:"Play Audio",
+        singer:"unknow",
         lyric:` verse:
                 Not even rain and stormy nights
                 Boy I'd be flying overhead

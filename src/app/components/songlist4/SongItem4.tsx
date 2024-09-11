@@ -1,15 +1,16 @@
 import { RiNeteaseCloudMusicLine } from "react-icons/ri";
 import { GrFavorite } from "react-icons/gr";
 import Link from "next/link";
+import ButtonPlay from "../button/buttonPlay";
 
 export default function SongItem4(props: any) {
-    const { image = " ", title = " ", singer = " ", time = 0, link =" " } = props;
+    const { image = " ", title = " ", singer = " ", time = 0, link =" ", audio=" " } = props;
     return (
         <>
             <div className="flex items-center justify-between py-[10px] px-[10px] border-y border-third border-collapse	">
                 { /* Left */}
                 <div className="w-[40%] flex items-center">
-                    <button className="text-[24px] text-third hover:text-primary hover:text-[28px]"><RiNeteaseCloudMusicLine /></button>
+                    <ButtonPlay {...props} className="text-[24px] text-third hover:text-primary hover:text-[28px]"></ButtonPlay>
                     <div className="w-[42px] aspect-square truncate mx-[12px] rounded-[8px]">
                         <img src={image} alt={title} className="w-full h-full object-cover"></img>
                     </div>

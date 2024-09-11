@@ -98,10 +98,9 @@
     top:55px;
     right:100px;
     background:#949494;
-    order:1;
-    z-index:999;
     box-shadow: 5px 10px 14px #6f6e6e;
     transform-origin: top;
+    transition: 1s;
 }
 
 
@@ -129,7 +128,7 @@
     border-top-left-radius: 50px;
     border-top-right-radius:50px;
     background:#444444;
-    transform: rotate(30deg);
+    transform: rotate(32deg);
     top:190px;
     right:35px;
     box-shadow: 5px 10px 14px #6f6e6e;
@@ -147,7 +146,6 @@
     top:-30px;
     left:-16px;
     box-shadow: 5px 10px 8px #6f6e6e;
-
 }
 
 .control:after{
@@ -189,10 +187,10 @@
 }
 
 .playing {
-    transform: rotate(30deg);
+    transform: rotate(32deg);
     transform-origin:top;
     transition: 1s;
-    animation: armTwitch 1s 3s infinite;
+    animation: armTwitch 1s 1s infinite;
 }
 
 .on{
@@ -210,3 +208,18 @@
         transform: rotate(31deg);
     }
 }
+
+
+/* box button play */
+
+.box-button-play .inner-icon-pause{
+    display:none;
+}
+.box-button-play.play .inner-icon-play{
+    display:none;
+}
+.box-button-play.play .inner-icon-pause{
+    display:block;
+}
+
+/* End box button play */

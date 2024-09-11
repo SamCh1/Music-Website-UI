@@ -7,7 +7,7 @@ export default async function Section1() {
 
     return (
         <>
-            <div className="flex items-start relative">
+            <div className="flex items-start justify-between">
                 <BannerHome />
                 <div className="flex-1 ml-[20px]">
                     <Title text="bài hát đang phát" />

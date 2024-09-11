@@ -13,6 +13,7 @@ export default function SongList4(props: any) {
                         singer={item.singer}
                         time={item.time}
                         link={item.link}
+                        audio={item.audio}
                     />
                 ))}
             </div>
