@@ -18,7 +18,7 @@ export default async function Section3(props: {songId: string, categoryId: strin
                     image: value.image,
                     listen: value.listen,
                     audio: value.audio,
-                    link: `/songs/${key}`
+                    link: `/song/${key}`
                 })
             }
             resolve(data);
