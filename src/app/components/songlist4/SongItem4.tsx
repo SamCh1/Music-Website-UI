@@ -1,8 +1,9 @@
 import { RiNeteaseCloudMusicLine } from "react-icons/ri";
 import { GrFavorite } from "react-icons/gr";
+import Link from "next/link";
 
 export default function SongItem4(props: any) {
-    const { image = " ", title = " ", singer = " ", time = 0} = props;
+    const { image = " ", title = " ", singer = " ", time = 0, link =" " } = props;
     return (
         <>
             <div className="flex items-center justify-between py-[10px] px-[10px] border-y border-third border-collapse	">
@@ -13,7 +14,7 @@ export default function SongItem4(props: any) {
                         <img src={image} alt={title} className="w-full h-full object-cover"></img>
                     </div>
                     <div className="text-primary font-[700] text-[16px]">
-                        {title}
+                        <Link href={link}>{title}</Link>
                     </div>
                 </div>
 

@@ -5,12 +5,12 @@ export default function SongItem(props: any){
     
     return(
         <>
-            <Link href="" className="h-[280px] w-auto rounded-[18px] hover:border hover:border-third p-[5px] mt-[20px]">
+            <Link href="" className="h-[280px] w-auto rounded-[18px] hover:border hover:border-third p-[5px] ">
                 <div className="text-center">
                     <div className="h-[200px] w-[200px]">
                         <img src={image} alt={title} className="w-full rounded-[18px] object-cover"></img>
                     </div>
-                    <div className="">
+                    <div className="mt-[5px]">
                         <div className="text-[24px] font-[700]">
                             {title}
                         </div>

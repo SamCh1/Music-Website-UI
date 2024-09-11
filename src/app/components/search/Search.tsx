@@ -1,17 +1,33 @@
+"use client"
 import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
 import { FaSearch, FaBell } from "react-icons/fa";
 import { IoSettings } from "react-icons/io5";
 
 
 export default function Search() {
+  const router = useRouter(); //để chuyển hướng trang
+  {/* để lưu giá trị trên thanh seach khi load lại trang */}
+  const searchParams = useSearchParams();
+  const keywordDefault = searchParams.get("keyword") || " ";
+  {/* End */}
+  const handleSearch = (event: any) => {
+    event.preventDefault();
+    const keyword = event.target.keyword.value;
+    if(keyword){
+      router.push(`/search?keyword=${keyword}`)
+    }
+  }
+
   return (
     <>
       <div className="flex items-center jusitfy-between px-[10px]">
-        <form className="w-[530px] border border-[#000] rounded-[50px] sticky top-[20px] left-[20px] z-[999] py-[15px] px-[30px] flex items-center">
+        <form onSubmit={handleSearch} className="w-[530px] border border-[#000] rounded-[50px] sticky top-[20px] left-[20px] z-[999] py-[15px] px-[30px] flex items-center">
               <input 
                   type="text"  
                   name="keyword"
                   placeholder="Nhập từ khoá tìm kiếm..."
+                  defaultValue={keywordDefault}
                   className="order-2 text-[16px] font-[600] text-primary bg-transparent outline-none flex-1">
               </input>
               <button 

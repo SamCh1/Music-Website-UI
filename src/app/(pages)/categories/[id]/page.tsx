@@ -24,7 +24,7 @@ export default async function CategoriesByIdPage(props : {params: { id:string }}
         />
 
         {/* Section 2*/}
-        <Section2/>
+        <Section2 id = {params.id}/>
       </>
 
       );

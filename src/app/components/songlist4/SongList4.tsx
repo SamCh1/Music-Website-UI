@@ -12,6 +12,7 @@ export default function SongList4(props: any) {
                         image={item.image}
                         singer={item.singer}
                         time={item.time}
+                        link={item.link}
                     />
                 ))}
             </div>
